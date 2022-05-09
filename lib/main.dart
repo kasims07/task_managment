@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_managment/screens/add_task.dart';
+import 'package:task_managment/screens/all_tasks.dart';
 import 'package:task_managment/screens/home_screen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AddTask(),
+      home: AllTasks(),
     );
   }
 }
