@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:task_managment/colors/app_colors.dart';
 import 'package:task_managment/widgets/button_widget.dart';
 import 'package:task_managment/widgets/textfiled_widget.dart';
+import 'package:get/get.dart';
 
 class AddTask extends StatelessWidget {
   const AddTask({Key? key}) : super(key: key);
@@ -28,7 +29,9 @@ class AddTask extends StatelessWidget {
                 height: 60,
               ),
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.back();
+                  },
                   icon: Icon(
                     Icons.arrow_back,
                     color: AppColors.secondaryColor,

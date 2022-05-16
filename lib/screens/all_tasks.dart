@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:task_managment/colors/app_colors.dart';
 import 'package:task_managment/widgets/button_widget.dart';
 import 'package:task_managment/widgets/task_widget.dart';
+import 'package:get/get.dart';
 
 class AllTasks extends StatelessWidget {
   const AllTasks({Key? key}) : super(key: key);
@@ -37,9 +38,14 @@ class AllTasks extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(left: 10, top: 60),
             alignment: Alignment.topLeft,
-            child: Icon(
-              Icons.arrow_back,
-              color: AppColors.secondaryColor,
+            child: InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: AppColors.secondaryColor,
+              ),
             ),
             width: double.maxFinite,
             height: MediaQuery.of(context).size.height / 3.2,
